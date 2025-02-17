@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoMarket</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <!-- ******************************************** NAVBAR ***************************************************** -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="homepage">CryptoMarket</a>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Favourite</a>
+            <a href="about.html" class="nav-link">About</a>
+
+        </div>
+        <div class="nav-right">
+            <input type="text" class="search" id="search_id" placeholder="Search">
+            <button class="searchBTN" id="searchBTN_id" onclick="CoinInfo()" ><span class="material-symbols-outlined">
+                    search
+                </span></button>
+
+            <!--***********SETTING BUTTON***********-->
+            <button class="settingBTN" id="settingBTN_id"><span class="material-symbols-outlined">
+                    settings
+                </span></button>
+
+        </div>
+    </nav>
+    <div class="settingListBox">
+        <ul class="settingList">
+            <li><button class="setting-list-items currencyBTN">Currency</button></li>
+            <li><button class="setting-list-items themeBTN">Theme</button></li> <!--That will do later-->
+        </ul>
+    </div>
+    <!--**************************************************NAVBAR(TOP) ENDS and MID SECTION COMES****************************************************-->
+<section class="commonView" >
+    <div class="upper_container">
+        <h1 class="heading">Today's Cryptocurrency Prices</h1>
+        <h4 class="fact">A cryptocurrency is a digital currency, which is an alternative form of payment created using encryption algorithms</h4>
+        <h4 class="fact">Here are the top 10 Cryptocurrencies</h4>
+    </div>
+    <!-- **********************************************MAIN TABLE SECTION******************************************** -->
+    <div>
+        <!--************************************************TABLE NAVBAR*******************************************************-->
+        <div class="nav-container">
+            <ul class="nav-container-list">
+                <li><button class="nav-BTN TopBTN" id="TopBTN_id">Top</button></li>
+                <li><button class="nav-BTN TrendingBTN" id="TrendingBTN_id">Trending</button></li>
+                <!-- <li><button class="nav-BTN TrendingBTN">Trending</button></li> -->
+            </ul>
+        </div>
+        <div class="container">
+            <div class="card">
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>#</th>
+                                <th>Coin</th>
+                                <th>Market Cap</th>
+                                <th>Price</th>
+                                <th>Change (24h)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableContent_id">
+                            <!--DATA WILL BE HERE-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="individualView" style="display: none;">
+    <div class="coinSummaryandChart">
+    <div class="coinSummary">
+        <div class="coinHeading">
+            <img class="coinImg" id="coinImg_id">
+            <h1 class="coinName" id="coinName_id">Coin Name</h1>
+            <h1 class="symbol" id="symbol_id">(BTC)</h1>
+        </div>
+
+        <p class="description" id="description_id">This is description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ex sint harum iure, officia ducimus fuga error expedita quam deleniti adipisci aperiam est voluptatem ipsam, cupiditate corrupti reiciendis numquam reprehenderit architecto eaque. Aperiam, consequatur.</p>
+    </div>
+
+    <div class="coinChart">
+        <h3 class="chartTitle">Price Chart (Last 7 days)</h3>
+        <canvas class="priceChart" id="priceChart_id" width= "600" height="400"></canvas>
+    </div>
+    </div>
+    
+    <div class="coinDetails">
+        <div class="coinValues">
+        <h4>Market Price : </h4>
+        <p id="market_price_id">$97000</p>
+        </div>
+        <div class="coinValues">
+        <h4>Market Cap : </h4>
+        <p id="market_cap_id">$900000000000</p>
+        </div>
+        <div class="coinValues">
+        <h4>Total Volume : </h4>
+        <p id="total_volume_id">$45600000000</p>
+        </div>
+        <div class="coinValues">
+        <h4>Price Change (24h) : </h4>
+        <p id="price_change_id">1.5 percent</p>
+        </div>
+        <div class="coinValues">
+        <h4>Circulating Supply : </h4>
+        <p id="circulating_supply_id">19000000</p>
+        </div>
+        <div class="coinValues">
+        <h4>Total Supply : </h4>
+        <p id="total_supply_id">21000000</p>
+        </div>
+    </div>
+
+</section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
