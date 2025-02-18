@@ -1,4 +1,13 @@
 # CryptoMarket-
+
+Task-4: Front-End Development (Medium)
+
+Problem Statement:
+With the growing interest in cryptocurrency, users often want to track real-time prices, 
+view historical trends, and analyze market changes. Your task is to build a Crypto 
+Price Tracker that fetches real-time data using an API and displays useful insights with 
+an interactive UI.
+
 CryptoMarket is a web-application of displaying various informations about Cryptocurrencies and lists top 10 cryptocurrencies and the trending ones.
 It gives real time data and updates about the cryptocurrencies. It is a user-friendly application and is easy to use.
 It also provides charts which gives history of past 7 days of the selected cryptocurrency.
